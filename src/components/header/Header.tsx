@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import React from "react";
-import { css, jsx } from "@emotion/core";
+import React from "react"
+import { css, jsx } from "@emotion/core"
 
 const styles = {
   headerStyles: css({
@@ -13,14 +13,14 @@ const styles = {
     fontSize: "40px",
     marginTop: "0px",
   }),
-};
+}
 
 const Header = () => {
   return (
     <div css={styles.headerStyles}>
       <h1 css={styles.logoFont}>GoLocal.Restaurant</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

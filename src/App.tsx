@@ -1,9 +1,9 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Header from "./components/header/Header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./components/home/Home";
+import React from "react"
+import logo from "./logo.svg"
+import "./App.css"
+import Header from "./components/header/Header"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import Home from "./components/home/Home"
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

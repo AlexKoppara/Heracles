@@ -1,5 +1,15 @@
-import React from "react";
+/** @jsx jsx */
+import React from "react"
+import { css, jsx } from "@emotion/core"
 
-const Home = () => <p>Home</p>;
+const Home = () => {
+  const styles = {}
+  return (
+    <div>
+      <div>Input Div</div>
+      <div>Text Blurb</div>
+    </div>
+  )
+}
 
-export default Home;
+export default Home
