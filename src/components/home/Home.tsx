@@ -4,6 +4,10 @@ import { css, jsx } from "@emotion/core"
 import colors from "../../shared/colors"
 import AddressSearchBar from "../../shared/components/AddressSearchBar"
 
+// interface locationData {
+
+// }
+
 const Home = () => {
   const styles = {
     mainContent: css({
@@ -20,6 +24,8 @@ const Home = () => {
       paddingTop: "20px"
     })
   }
+
+  // const 
 
   return (
     <div>

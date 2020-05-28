@@ -4,7 +4,12 @@ import useOnclickOutside from 'react-cool-onclickoutside';
 
 type Suggestion = google.maps.places.AutocompletePrediction;
 
-const AddressSearchBar = () => {
+interface AddressSearchBarProps {
+  state?: any,
+  setState?: (state: any) => void
+}
+
+const AddressSearchBar = ({ setState }: AddressSearchBarProps) => {
   const {
     ready,
     value,
@@ -35,9 +40,14 @@ const AddressSearchBar = () => {
 
     // Get latitude and longitude via utility functions
     getGeocode({ address: description })
-      .then(results => getLatLng(results[0]))
+      .then(results => {console.log(results); return getLatLng(results[0])})
       .then(({ lat, lng }) => {
         console.log('📍 Coordinates: ', { lat, lng });
+        setState && setState({
+          address: description,
+          lat: lat,
+          lng: lng
+        })
       }).catch(error => {
         console.log('😱 Error: ', error)
       });
